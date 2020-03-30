@@ -1,0 +1,83 @@
+Por que git y githud: control de versiones. Noa ayuda a llevar los estados de nuestros proyecto.
+Conjunto de comandos que realiza cosas especificadas.
+
+----QUE ES UN SISTEMA DE CONTROL DE VERSIONES: Registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo.
+----Cuando hacemos algo en word, por ejemplo al dar control z nos devolvemos a el estado anterior del archivo.
+
+Realizaremos una web mientras usamos git.
+----CLASIFICACIÓN
+--Local: Que vive en nuestra laptop.
+--Centralizado: Lo hace más grande, por que se guarda en el 	server. O sea hay se almacena el proyecto permitiendo 	distibuirlo para multiples dispositivos.
+--Distribuidos: Git es distribuido, entonces cada usuario que 	participe en el proyecto, tiene una copia del proyecto que 	realiza, por eso no dependemos de un solo computador que 	almacena la info.
+------------------ GIT ---------------------------
+Open source linux, se asocio con Beatkeeper. y cuando se rompen las relaciones, linux crea su propio sistema distribuidos de control de versiones. Haciendolo veloz, senscillo, completamente distribuido.
+Desarrollo no lienal:  podemos abrir cosas cuando queramos aparte delproyecto principal.
+Git al igual alamacena una referencia de los archivos que no se han cambiado.
+Cualquier trabajo es local. Entonces puedes trabajar y luego subirlo apenas tengas internet. comits.
+Integridad: no se pierde la info sin que lo detecte.
+
+---------------LOS 3 ESTADOS DE GIT--------------------
+Working Directory:Inicalmente entra aquí.
+Staging Area: pasa por el área de preparación donde se inical el 
+	proyecto.
+Git Repository:commint se guarda
+------------Que es GitHub----------------------
+Pueden trabajar en conjunto pero tambien separado.
+Git: el oftware de versionamiento.
+GitHub es la plataforma host para alamacenar los cambios en la red.
+Y además funciona como una red social. 
+
+Para intalar en WINDOWS, seguir los pases y listo
+
+Linux: Si eres usuario de linux usar la consola debe ser algo con lo que te topas en tu día a día, otra ventaja es que en muchos sistemas de codigo abierto ya tiene git pre-instalado así que probemos eso primero.
+ve a tu terminal y escribe git --version si te muestra la versión de git todo está perfecto y puedes continuar con las clases si no es tu caso instálalo según tu distribución desde la terminal corriendo los siguientes comandos.
+En Ubuntu o distribuciones derivadas
+
+sudo apt-get install git
+
+------------- COMANDOS ÚTILES EN LA TERMINASL GIT BASH -----------------
+Tenemos que aprender algunos comandos sencillos, para trabajar con Git.
+
+    El primero es cd que nos permite movernos dentro de carpetas. Con cd … podemos salir de las carpetas.
+    Para crear carpetas vamos a usar mkdir y ponemos el nombre de la carpeta que vamos a crear.
+    Con el comando ls vamos a ver las carpetas que tenemos creadas.
+    Para limpiar la terminal vamos a usar el comando clear. Este nos sirve para hacer scroll e ir al principio de la terminal.
+    El comando touch nos permite crear archivos.
+    Para borrar archivos vamos a usar el comando rm y el nombre del archivo.
+    De la misma forma para borrar carpetas usamos rm -rf y el nombre de la carpeta.
+    Otra herramienta que vamos a usar dentro de Git para editar archivos con el editor que tengamos en nuestra máquina pero dentro de la terminal.
+    Con el comando _:wq _vamos a guardar los cambios que hicimos dentro del archivo que habíamos creado.
+
+PARA ENTRAR EN WINDOWS EN UNA CARPETA, DEBEMOS INGRESAR CARPETA A CARPETA  CD
+HASTA LLEGAR A LA DESTINO
+/d/Alejo/CursosYLenguajes/GitHub
+ PARA SALIR cd ..
+ ls vemos las carpetas.
+ touch crear archivo.
+ rm file.txt borrar rchivos
+ rm -rf repositorio2 borrar carpeta
+ editar archivos : vim archivo.txt
+---PARA GUARDAR LO QUE EDITE ----
+escape + :  y guardar wq con esto lo guardamos.
+sin guardar solo q  .
+
+---------COMANDOS GIT -------------------------
+git init : creando repositorio. o iniciar
+(MASTER) ES UNA RAMA: quiere decir que esta en el repositorio.
+AHÍ YA PODEMOS CREAR ARCHIVOS
+--CARPETA OCULTA : ES DONDE VIVE, SI NOS DESACEMOS SE DESAPARECE EL REPO.
+-- Borrar repositorio : rm -rf .git
+
+----------GIT ADD ----------------------------------------------
+Agregado, quitar y viendo el estatud de los archivos.
+
+Creamos un archivo nuevo y para agregarlo.
+git status: miramos el estado del archivo si esta en rojo
+es por que esta en nuestro workin directori y con 
+git add agregamos a git los archivos.
+
+YA EN VERDE FALTA AGREGARLO A COMIT
+si lo quiero borrar 
+git rm --cached file
+
+---- git add -A agrega todo lo que esta para ser agregado.
