@@ -93,3 +93,10 @@ Pasamos a nustro repositorio git los archivos.
 got commit -m "Inicializar nuestro landing" 
 lo que hicimos fue agregar todo a el repository(3er estado git)
 
+Como hago cuando realice un commit sin todo
+entonces
+git commit -m 'concateno cambios' -amend =lo que hace es concatener con el cambio previo.
+O SOLO git commint --amend
+
+git log : ver los commit
+
