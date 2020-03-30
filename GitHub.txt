@@ -73,7 +73,7 @@ Agregado, quitar y viendo el estatud de los archivos.
 
 Creamos un archivo nuevo y para agregarlo.
 git status: miramos el estado del archivo si esta en rojo
-es por que esta en nuestro workin directori y con 
+es por que esta en nuestro working directory y con 
 git add agregamos a git los archivos.
 
 YA EN VERDE FALTA AGREGARLO A COMIT
@@ -81,3 +81,15 @@ si lo quiero borrar
 git rm --cached file
 
 ---- git add -A agrega todo lo que esta para ser agregado.
+para quitarlos tambien
+----- git rm -f archivos, se borra de todo lugar
+
+..--- git add -n archivo: no hace la agregación o sea, miramos lo que en realidad esta 
+
+Aqui estamos en Staging
+---------- git commit ------------------
+CONFIRMAMOS CAMBIOS
+Pasamos a nustro repositorio git los archivos.
+got commit -m "Inicializar nuestro landing" 
+lo que hicimos fue agregar todo a el repository(3er estado git)
+
