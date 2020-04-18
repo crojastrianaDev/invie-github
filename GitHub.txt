@@ -151,3 +151,5 @@ O  reescribir en el commit
 
 ------gir reset --mixed --------
 Se usa para hacer cambios en commits que pudieran tener errores.
+Descarta cambios pero no deja los archivos en stache.
+nos dice que hacer
