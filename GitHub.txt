@@ -76,7 +76,7 @@ git status: miramos el estado del archivo si esta en rojo
 es por que esta en nuestro working directory y con 
 git add agregamos a git los archivos.
 
-YA EN VERDE FALTA AGREGARLO A COMIT
+YA EN VERDE FALTA AGREGARLO A COMMIT
 si lo quiero borrar 
 git rm --cached file
 
@@ -96,7 +96,58 @@ lo que hicimos fue agregar todo a el repository(3er estado git)
 Como hago cuando realice un commit sin todo
 entonces
 git commit -m 'concateno cambios' -amend =lo que hace es concatener con el cambio previo.
-O SOLO git commint --amend
+O SOLO git commit --amend
 
 git log : ver los commit
 
+---------------- git tag ---------------
+Etiquetando confirmaciones.
+Son ligeras o anotadas: Ligeras se crean con el nombre de la etiqueta, las anotaciones son las que llevan un mensaje usando -m podemos dejar mensaje.
+Si queremos borrarlas -d, si las queremos listar usamos  -l
+y si las queremos renombrar -f 
+Utilizamos Sha-1 podemos crear etiquetas anotadas haciendo referencia a commit viejos.
+git tag -a 0.5 -m 'Versión estable del proyecto'
+// así etiquetamos el ultimo commit.
+// y así agregamos de pasados 
+git tag 0.3 f944a1212962e1bc1d86f3dda37469663bf1337d
+// Y PARA VERLO
+ git tag -l
+// borrar etiqueta
+git tag -d 1.0
+// renombrar
+git tag -f -a 0.1 -m 'Iniciando proyecto' 218e960adc15622a75b78099ff53da5e7b68ff8a
+// luego se puede borrar la versión que no estaba bien.
+
+----------------git log ..........
+Revisa las historias de nuestro proyecto
+logs muestra los códigos hexadecimales que crea el Sha-1, el auto y fecha del commit.
+
+-- git log --oneline : pones los commits más reducidos. Lo cual                        al tener muchos es mejor verlos así.
+--git log --oneline --graph: los graficos de los commits.
+
+--git log -'Numero de omits?: los comits que quiero ver. La 			cantidad que quiera.
+
+-------------------- git diff ------------------------------
+Revisa los cambios entre las versiones.
+Los cambios que hay entre commits se usan los Sha-1 para ver la comparación.
+///
+git diff 218e960 PONEOS EL Sha-1 y vemos los cambios que hay, de ese commit al final en el que estamos.
+
+/// Así comparamos con otro commit
+
+git diff "Sha-1" "Sha-1" 
+ -- En rojo aparece al comparar con la que no nuevo con el anterios y en verde, el que anterior (que no tenia) con el nuevo (que tien).
+-- git diff [version 1] vs [version 2] 
+
+--------------------- git reset --soft -----------------------
+Con este comando, podemos borrar commits que no debimos giardar.
+Pero debemos tener cuidado de no borrar otros.
+--soft [Sha-1]: nos permite identidicar el commit que queremos resetear. 
+Entonces se pone desde el sha anterios al que quiero quitar. 
+Los archivos no los cambia.
+O  reescribir en el commit
+--mixed: 
+--hard: 
+
+------gir reset --mixed --------
+Se usa para hacer cambios en commits que pudieran tener errores.
