@@ -140,7 +140,7 @@ git diff "Sha-1" "Sha-1"
 -- git diff [version 1] vs [version 2] 
 
 --------------------- git reset --soft -----------------------
-Con este comando, podemos borrar commits que no debimos giardar.
+Con este comando, podemos borrar commits que no debimos guardar, pero mantiene los cambios.
 Pero debemos tener cuidado de no borrar otros.
 --soft [Sha-1]: nos permite identidicar el commit que queremos resetear. 
 Entonces se pone desde el sha anterios al que quiero quitar. 
@@ -153,3 +153,19 @@ O  reescribir en el commit
 Se usa para hacer cambios en commits que pudieran tener errores.
 Descarta cambios pero no deja los archivos en stache.
 nos dice que hacer
+Cambia 
+------------git reset --hard -----------
+este si borra absolutamente todo 
+Si estan en el workin directory no los borra, por que no estan todabia en git.
+con commits:  git reset -hard Sha-1
+para recuperar los datos si borre todo, se usa 
+el ultimo sha-1,por eso si borro algo debo tener dos ventanas, para tener los sha1 en otro lado por si se nos borra todo.
+git reset -hard sha1 ultimo 
+git log
+
+-------------------------- otro editor de texto-----------------
+Como configuro cualquier editor de texto, parausar git.
+
+git config --global core.editor vim : se abre la configuración 
+otro editor
+git config --global core.editor "atom --wait" (o el editor de código que quiera)
