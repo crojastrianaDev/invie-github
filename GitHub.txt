@@ -169,3 +169,23 @@ Como configuro cualquier editor de texto, parausar git.
 git config --global core.editor vim : se abre la configuración 
 otro editor
 git config --global core.editor "atom --wait" (o el editor de código que quiera)
+
+----------- git branch (multiples variables del repo)-----------
+Con esto, podemos usar más ramas en el projecto.
+(naster) es la rama principal, con ella inicia el proyecto git.
+cuando necesito puedo crear otras ramas, para trabajar con un equipo.
+Pero lo mejor es trabajar en una rama aparte, por si hago un bug, en la principal todo seguiria bien.
+git branch nombre
+para verlas
+git branch -l
+borrar
+git branch -d nombre
+si tiene commit borrar
+git branch -D nombre
+renombrar rama
+git branch -m nombre nuevoNombre
+
+------git checkout (Moviendonos entre ramas y versiones)--------
+Con este comando, nos movemos en el tiempo sin borrar nada, este comando ayuda a cazar bugs o verificar el estado de nuestro proyecto en determinado momento. Moviendonos sha a sha o bueno, comit a comit.
+Y tambien podemos crear ramas:
+git checkout -b
