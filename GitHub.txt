@@ -172,7 +172,7 @@ git config --global core.editor "atom --wait" (o el editor de código que quiera
 
 ----------- git branch (multiples variables del repo)-----------
 Con esto, podemos usar más ramas en el projecto.
-(naster) es la rama principal, con ella inicia el proyecto git.
+(Master) es la rama principal, con ella inicia el proyecto git.
 cuando necesito puedo crear otras ramas, para trabajar con un equipo.
 Pero lo mejor es trabajar en una rama aparte, por si hago un bug, en la principal todo seguiria bien.
 git branch nombre
@@ -189,3 +189,10 @@ git branch -m nombre nuevoNombre
 Con este comando, nos movemos en el tiempo sin borrar nada, este comando ayuda a cazar bugs o verificar el estado de nuestro proyecto en determinado momento. Moviendonos sha a sha o bueno, comit a comit.
 Y tambien podemos crear ramas:
 git checkout -b
+
+------------ git merge (mezclando entre ramas)--------------------
+REFLEJAR LAS RAMAS EN NUESTRA RAMA MASTER.
+git merge 'nombre rama a mezclar'
+
+aparece como un Fast-forward al realizarce la mezcla
+
