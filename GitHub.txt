@@ -187,12 +187,30 @@ git branch -m nombre nuevoNombre
 
 ------git checkout (Moviendonos entre ramas y versiones)--------
 Con este comando, nos movemos en el tiempo sin borrar nada, este comando ayuda a cazar bugs o verificar el estado de nuestro proyecto en determinado momento. Moviendonos sha a sha o bueno, comit a comit.
-Y tambien podemos crear ramas:
+Y tambien podemos crear ramas e ingresar a ella directamente:
 git checkout -b
+Movernos en el tiempo con los commit a travez de los Sha-1
+git checkout 'sha-1'
+
+Si econtramos un bug, tenemos qye crear una para solucionar el bug pero desde el master  y no en la rama del bug.
+
+--------Trabajando entreramas------------------
+ si ocurre un error podemos ir rama a rama buscando el bug.
+
+si no agregamos algo en una rama, ello se mueven a otra rama esperando el commit.
+
+Ya puedo ir trabajando poco a poco versión a versión
+
 
 ------------ git merge (mezclando entre ramas)--------------------
 REFLEJAR LAS RAMAS EN NUESTRA RAMA MASTER.
 git merge 'nombre rama a mezclar'
 
 aparece como un Fast-forward al realizarce la mezcla
+
+para mezclar:
+git merge nombreRama a maezclar 
+si sale fast-forward quiere decir que mezclamos cosas directamente con la master
+
+merge con conflictos: git merge nuva-imagen
 
