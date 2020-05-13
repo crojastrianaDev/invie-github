@@ -200,5 +200,9 @@ git merge 'nombre rama a mezclar'
 
 aparece como un Fast-forward al realizarce la mezcla
 
+para mezclar:
+git merge nombreRama a maezclar 
+si sale fast-forward quiere decir que mezclamos cosas directamente con la master
+
 
 
