@@ -222,4 +222,4 @@ sera recursivo, debemos agregar cada cambio y luego hacer un commit y listo, si 
 Saldra luego todo y realiza el commit que pide realizar cambios.
 
 merge con conflictos: git merge nuva-imagen
-
+ y ya decido con que quedarme.
