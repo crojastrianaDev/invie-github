@@ -194,8 +194,6 @@ git checkout 'sha-1'
 
 Si econtramos un bug, tenemos qye crear una para solucionar el bug pero desde el master  y no en la rama del bug.
 
-<<<<<<< HEAD
-=======
 --------Trabajando entre ramas------------------
  si ocurre un error podemos ir rama a rama buscando el bug.
 
@@ -204,20 +202,24 @@ si no agregamos algo en una rama, ello se mueven a otra rama esperando el commit
 Ya puedo ir trabajando poco a poco versión a versión
 
 
->>>>>>> RD
 ------------ git merge (mezclando entre ramas)--------------------
 REFLEJAR LAS RAMAS EN NUESTRA RAMA MASTER.
 git merge 'nombre rama a mezclar'
 
-aparece como un Fast-forward al realizarce la mezcla
 
+
+aparece como un Fast-forward al realizarce la mezcla por que es la manera más facil al ser el primero 
 para mezclar:
 git merge nombreRama a maezclar 
 si sale fast-forward quiere decir que mezclamos cosas directamente con la master
 
-<<<<<<< HEAD
+7
+Si vas despues:
+sera recursivo, debemos agregar cada cambio y luego hacer un commit y listo, si no hay conflicto con archivos todo saldra bien un commit m´ás y ya
 
-=======
+
+
+Saldra luego todo y realiza el commit que pide realizar cambios.
+
 merge con conflictos: git merge nuva-imagen
->>>>>>> RD
 
