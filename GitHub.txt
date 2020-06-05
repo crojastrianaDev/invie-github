@@ -228,5 +228,14 @@ merge con conflictos: git merge nuva-imagen
 Rescribe la histpria del proyecto
 es otra manera de hacer mezclas de las ramás en el proyecto
 
+CON ESTE SOLO HACEMOS UN COMMIT Y NO AGREGAMOS MÁS CON ESTE SOLO TENEMOS UNA LINEA DE TIEMPO CON LOS LOG.
+
+//creamos rama a mezclar con rebase
+git checkout -b updateA
+touch updateA
+git add -A
+git commit 
+
+
 
 
