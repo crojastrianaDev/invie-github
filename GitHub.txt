@@ -261,4 +261,11 @@ git rebase -i updateA
 y en nuesto eidtor veremos las opciones.
 
 
+-------git stash-------------------
+GUARDANDO CAMBIOS TEMPORALMENTE
+
+Si no estamos lisos para confirmar el cambio, Stash nos permite mantener un estado intermedio antes de fenerar un commit. CAMBIOS SIN CONFIRMAR-
+
+
+
 
