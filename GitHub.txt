@@ -236,6 +236,29 @@ touch updateA
 git add -A
 git commit 
 
+// volvemos al master
+git checkout master
+creamos las ramas que necesiremos 
+
+y para agregarlas o bueno mezclarlas 
+// con este vemos que se agrega en curcas
+git merge updateA 
+
+// con este no gay curva
+git rebase updateB
+
+
+// vemos los cambios
+git log --oneline --graph
+
+
+Con esto vemos como se agregan las cosas y se ve lineal.
+
+
+git reset --hard commit
+// la mezclamos interactivamente
+git rebase -i updateA
+y en nuesto eidtor veremos las opciones.
 
 
 
