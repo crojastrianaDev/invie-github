@@ -264,7 +264,52 @@ y en nuesto eidtor veremos las opciones.
 -------git stash-------------------
 GUARDANDO CAMBIOS TEMPORALMENTE
 
-Si no estamos lisos para confirmar el cambio, Stash nos permite mantener un estado intermedio antes de fenerar un commit. CAMBIOS SIN CONFIRMAR-
+Si no estamos lisos para confirmar el cambio, Stash nos permite mantener un estado intermedio antes de fenerar un commit. CAMBIOS SIN CONFIRMAR.
+
+Entonces guardo sin hacer commit, guardamos el estado
+
+git stash 
+
+Si ingreso a otra rama
+
+git checkout hotfix
+
+puedo entrar sin problema por que tenfo un estado guardado y puedo regresar a la otra rama
+y restablesco el estado a la rama.
+
+git stash list
+
+con ese comando vere los cambios 
+Y los podemos eliminar tambien
+
+git stash drop stash@{0}
+
+y si lo borre listo no pasa nada 
+
+si creo un archivo 
+
+touch cambio2
+
+debo agregarlo a git para poder entrar en stash
+
+git add cambio2
+
+Ahora si lo puedo stashear
+
+git stash
+
+git list
+
+Ahora lo agregamos A COMMIT
+
+(( con este aplicamos el ultimo cambio
+git stash apply
+
+// varios stash y con el a volvemos 
+
+git stash apply stash@{0}  
+
+
 
 
 
