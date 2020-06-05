@@ -223,3 +223,10 @@ Saldra luego todo y realiza el commit que pide realizar cambios.
 
 merge con conflictos: git merge nuva-imagen
  y ya decido con que quedarme.
+
+-------------- git rebase-. -----------------
+Rescribe la histpria del proyecto
+es otra manera de hacer mezclas de las ramás en el proyecto
+
+
+
