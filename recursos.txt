@@ -2,3 +2,6 @@ https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/subir-
 
 
 https://plusis.net/2019/04/01/leccion-01-introduccion-a-git/
+
+
+https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Configuraci%C3%B3n-de-Git
