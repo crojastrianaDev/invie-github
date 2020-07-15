@@ -326,6 +326,8 @@ Ahora so podemos mezclar con nuestra rama master.
 
 
 -------------------- Desafio git ------------------
-
+Crear un repositporio y crear un flujo  git log --oneline --graph
+ Multiples commit por cada rama.
+hotfix, css, imagenes RD y master.
 
 
