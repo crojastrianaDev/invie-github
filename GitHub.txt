@@ -312,7 +312,20 @@ git stash apply stash@{0}
 --------------Cherry pick eligiendo commits selectivamente---------------
 Si estás trabajando en una rama, pero de repente notas que hiciste un cambio en la rama que no debías, para esto podemos usar cherry pick. Este comando nos puede salvar la vida, ya que nos permite sacar cambios específicos de una rama y mezclarlos en otra.
 
+Si hicmos algo en una rama que no era:
+Entonces debo sacar ese archivo de esta ramna y mandarlo a la que es
+y luego mezclar en master.
 
+Entonces entramos a la rama donde si debimos hacer el commit y lo movemos con el comando.
+
+git cherry-pick 994dded  
+
+Ahora so podemos mezclar con nuestra rama master.
+
+ git merge hotfix2   
+
+
+-------------------- Desafio git ------------------
 
 
 
