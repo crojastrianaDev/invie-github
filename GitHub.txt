@@ -62,7 +62,7 @@ escape + :  y guardar wq con esto lo guardamos.
 sin guardar solo q  .
 
 ---------COMANDOS GIT -------------------------
-git init : creando repositorio. o iniciar
+--------git init : creando repositorio. o iniciar--------------
 (MASTER) ES UNA RAMA: quiere decir que esta en el repositorio.
 AHÍ YA PODEMOS CREAR ARCHIVOS
 --CARPETA OCULTA : ES DONDE VIVE, SI NOS DESACEMOS SE DESAPARECE EL REPO.
@@ -241,7 +241,7 @@ git checkout master
 creamos las ramas que necesiremos 
 
 y para agregarlas o bueno mezclarlas 
-// con este vemos que se agrega en curcas
+// con este vemos que se agrega en curvas
 git merge updateA 
 
 // con este no gay curva
