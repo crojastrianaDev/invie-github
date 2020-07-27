@@ -330,4 +330,48 @@ Crear un repositporio y crear un flujo  git log --oneline --graph
  Multiples commit por cada rama.
 hotfix, css, imagenes RD y master.
 
+----------------------Creando cuenta GitHub-----------
+Vamos a la web de GitHub que nos brinda el repositorio remoto.
+Creamos la cuenta y nos logueamos.
+¿Qué es? Una red social para desarrolladores, que nos permite trabajar y colaborar con la comunidad.
+
+-----------git clone/fork (Clonando repositorios remotos)------------
+el **fork **en github nos hace una copia del proyecto en nuestro perfil/repositorios para poder hacerle lo que queramos sin afectar el proyecto original.
+
+Vamos a proceder a crear nuestro primer proyecto en GitHub.
+
+    Nuevo repositorio
+    Asigna un nombre a tu repositorio
+    Asigna una descripción a tu repositorio
+    Puedes adicionar un ““read me””
+    Crea el repositorio
+
+En la parte derecha encuentras una opción que se llama clone or download si no es nuestra intención compartirlo.
+Un fork va a clonar el proyecto y nos va a crear un nuevo proyecto en el GitHub.
+
+CREAMOS EL REPO: PODEMOS INVOCARLO DESDE EL LOCAL CON UNA CLONACIÓN.
+PUEDO DESCARGARLO ZIC PARA USAR ALGO O CLONAR PARA TENERLO EN LOCAL.
+
+
+***DENTRO DE LA CONSOLA PONEMOS git clone https://github.com/crojastriana3/invie-github.git
+
+** SI NO SOY DUEÑO LE HAGO UN Fork, nos permite clonar el proyecto y me agrega un proyecto en mi propio gitHub para poder tranajar en el.	
+   EN EL YO PUEDO HACER CAMBIOS Y SOLICTAR AL DUEÑO QUE LOS ACEPTE.
+
+******************Añadiendo claces ssh s GitHub*****************************
+Si quieres mantener tu seguros dentro de GitHub es importante usar llaves ssh con el comando:
+-------------**************>>  ssh-keygen -t rsa -b 4096 -C "cristianrojas@unimayor.edu.co"
+
+Con esto, podemos comunicarnos con el local de manera segura.
+Así no nos pedira usuairo y contraeña siempre. 
+
+la creamos en consola: ssh-keygen -t rsa -b 4096 -C "cristianrojas@unimayor.edu.co" 
+TIENE QUE SE EL CORREO QUE TIENE EN GitHub
+
+
+** PARA COPIAR LA LLAVE USAMOS:
+   cat ~/.ssh/id_rsa.pub
+
+
+
 
