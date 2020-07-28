@@ -408,4 +408,6 @@ Cuando esto termine tendremos acceso a nuestro trabajo desde la plataforma de Gi
 Lo primero que debemos hacer es enviar nuestros tags en el proyecto.
 también recordemos que podemos eviar ramas, lo que también posdemos hacer a través del uso del comando git push [nombre de la rama].
 
-** Enviar al remoto: git push origin master
+** Enviar al remoto solo el master: git push origin master
+
+*** Para enviar las demás ramas y tags: git push origin master --tags   -- Otra rama: git push origin RD
