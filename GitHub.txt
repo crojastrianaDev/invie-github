@@ -390,9 +390,22 @@ Vamos a compartir nuestro código con el repositorio remoto. Antes de poder envi
 Para traer los cambios del repositorios remoto vamos a usar el comando git fetch. Este comando recibe dos parámetros 1. desde donde y hacia donde van.
 Luego de traer los cambios, debemos mezclarlos con la rama que estamos usando en local. Para esto usamos git merge.
 
-** O PARA NO GACER FETCH Y MERGE SOLO USAMOS pull: git pull origin master
 
 **Al tener los cambios en el repo y tener conectado el local con el remoto, debemos ahora.
 
 ** Si queremos descargar archivos del remoto: git fetch origin master
+
 **ahora los mezclamos: git merge origin/master --allow-unrelated-histories
+
+** O PARA NO GACER FETCH Y MERGE SOLO USAMOS pull: git pull origin master
+
+--Con esto ya tenemos en local las cosas para trabajar con el remoto.
+
+
+--------------git push (Enviando cambios al repositorio remoto)--------------------------------------------
+Para enviar nuestro código al repositorio remoto vamos a usar el comando git push. Así logramos que otras personas tengan acceso a nuestro proyecto.
+Cuando esto termine tendremos acceso a nuestro trabajo desde la plataforma de GitHub.
+Lo primero que debemos hacer es enviar nuestros tags en el proyecto.
+también recordemos que podemos eviar ramas, lo que también posdemos hacer a través del uso del comando git push [nombre de la rama].
+
+** Enviar al remoto: git push origin master
