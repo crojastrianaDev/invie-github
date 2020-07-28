@@ -330,6 +330,7 @@ Crear un repositporio y crear un flujo  git log --oneline --graph
  Multiples commit por cada rama.
 hotfix, css, imagenes RD y master.
 
+
 ----------------------Creando cuenta GitHub-----------
 Vamos a la web de GitHub que nos brinda el repositorio remoto.
 Creamos la cuenta y nos logueamos.
@@ -372,6 +373,26 @@ TIENE QUE SE EL CORREO QUE TIENE EN GitHub
 ** PARA COPIAR LA LLAVE USAMOS:
    cat ~/.ssh/id_rsa.pub
 
+---------------git remote (Añadiendo un repositorio remoto a uno local)-------------------------
+Tenemos que crear una conexión entre tu repositorio local y tu repositorio remoto para que puedas compartirlo con la comunidad. Para esto vamos a usar un nuevo comando que en este caso es git remote. Por convención lo nombramos “origin”. Para borrarlo podemos usar git remote remove y el nombre del repositorio.
+
+*** git remote add origin git@github.com:crojastriana3/invie-github.git 
 
 
+** verlo git remote -v
 
+
+** eliminarlo git remote remove origin
+
+
+*************git pull/fetch (Trayendo cambios desde el repositorio remoto)--------------------------------------
+Vamos a compartir nuestro código con el repositorio remoto. Antes de poder enviar cambios tengo que tener los mismos cambios en el repositorio remoto que en el repositorio local.
+Para traer los cambios del repositorios remoto vamos a usar el comando git fetch. Este comando recibe dos parámetros 1. desde donde y hacia donde van.
+Luego de traer los cambios, debemos mezclarlos con la rama que estamos usando en local. Para esto usamos git merge.
+
+** O PARA NO GACER FETCH Y MERGE SOLO USAMOS pull: git pull origin master
+
+**Al tener los cambios en el repo y tener conectado el local con el remoto, debemos ahora.
+
+** Si queremos descargar archivos del remoto: git fetch origin master
+**ahora los mezclamos: git merge origin/master --allow-unrelated-histories
