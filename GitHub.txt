@@ -161,7 +161,7 @@ para recuperar los datos si borre todo, se usa
 el ultimo sha-1, por eso si borro algo debo tener dos ventanas, para tener los sha1 en otro lado por si se nos borra todo.
 git reset -hard sha1 ultimo 
 git log
-
+git reset HEAD^ --hard
 -------------------------- otro editor de texto-----------------
 Como configuro cualquier editor de texto, para usar git.
 
