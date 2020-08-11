@@ -477,3 +477,11 @@ Con estas pautas pueden solicitar un Pull Request.
 Si tienes archivos que no pueden ser públicos, como archivos de configuración con contraseñas, lo ideal es que no los subas a tu repositorio, estos archivos los puedes poner en el archivo .gitignore.
 
 En el agregamos todos los archivos que requerimos en local pero no en el remoto.
+
+En esta web podemos encontrar el gitignore de nuestro proyecto-
+https://www.toptal.com/developers/gitignore
+
+**********Pull Request (Colabora a proyectos externos)***********
+Un Pull Request es una solicitud para que el dueño del repositorio realice los cambios que estas proponiendo. Estos nunca se hacen a la rama master, para evitar inconvenientes.
+Es la base de la colaboración Open Source en github 
+
