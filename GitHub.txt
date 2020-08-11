@@ -457,4 +457,23 @@ Unwatch (Nos permite que nos lleguen notificaciones si hay cambios en el reposit
 
     Al crear un “issue” o un “pull request”, github te permite incluir etiquetas en los mismos. Entre las etiquetas que nos pueden interesar a los que estamos comenzando a usar la plataforma se encuentran “help wanted” y “good first issue”. Github anima a los desarrolladores a que marquen los “issue” y los “pull request” que son más aptos para los que inician en este mundo con estas etiquetas y adicionalmente se pide a la comunidad que den un apoyo especial para estos issue/pull request. ¿Quiéres comenzar a colaborar en un proyecto real en Github pero aún te sientes inseguro con tus conocimientos? Haz una búsqueda de estás etiquetas y encontrarás miles de oportunidades para hacer tu primer aporte.
 
+*******************Poryectos github***************************
+A cada repositorio se le ´puede crear un proyecto.
+Ejemplo para el Resposive Design seria uno y así para cada parrte grande de un proyecto.
 
+Y se puede orgranizar por columnas las tareas.
+
+*************Creando un template para issues *******************
+Lo ideal es que siempre que creemos un proyecto tengamos un template para enviar pull requests o cuando tengamos issues.
+
+En este, pedimos la información mediante preguntas de lo que queremos saber de un issue o un pull.
+
+*************Creando un template para Pull Request***************
+Nos permite tener pautas con los colaboradores.
+Con estas pautas pueden solicitar un Pull Request.
+
+******.gitignore (Ignorando archivos no deseados)***************
+
+Si tienes archivos que no pueden ser públicos, como archivos de configuración con contraseñas, lo ideal es que no los subas a tu repositorio, estos archivos los puedes poner en el archivo .gitignore.
+
+En el agregamos todos los archivos que requerimos en local pero no en el remoto.
