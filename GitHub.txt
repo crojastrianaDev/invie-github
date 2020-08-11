@@ -483,6 +483,5 @@ https://www.toptal.com/developers/gitignore
 
 **********Pull Request (Colabora a proyectos externos)***********
 Un Pull Request es una solicitud para que el dueño del repositorio realice los cambios que estas proponiendo. Estos nunca se hacen a la rama master, para evitar inconvenientes.
-
 Es la base de la colaboración Open Source en github 
-
+Se tiene en cuenta que si bloqueamos la rama master, todo cambio se debe subir desde una rama diferente y luego pedir el pull Request.
