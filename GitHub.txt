@@ -485,3 +485,16 @@ https://www.toptal.com/developers/gitignore
 Un Pull Request es una solicitud para que el dueño del repositorio realice los cambios que estas proponiendo. Estos nunca se hacen a la rama master, para evitar inconvenientes.
 Es la base de la colaboración Open Source en github 
 Se tiene en cuenta que si bloqueamos la rama master, todo cambio se debe subir desde una rama diferente y luego pedir el pull Request.
+
+****************Issues y Milestones(Reportando y monitoreando errores edicientemente)*********************
+
+Issues: Es la manera de hacer reportes o cambios en el repositorio.
+
+Milestone: Una forma de agrupas conjuntos de Issues o PullRequest.
+
+Labels: Son etiquetas para nuestros Issues.
+
+********¿Cómo funciona un Pull Request en GitHub?**************
+Debemos crear un fork, que lo que hace es crear una copia del original y tener nuestra propia versión.
+
+Si yo quiero puedo solicitar el PullRequest a el lider del proyecto al que se le hizo el fork, y si es aprovado eres parte o eres uno de los desarroladores que aporta a ese proyecto.
