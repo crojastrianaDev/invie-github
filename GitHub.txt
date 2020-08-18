@@ -7,11 +7,11 @@ Registra los cambios realizados sobre un archivo o conjunto de archivos a lo lar
 Cuando hacemos algo en word, por ejemplo, al dar control z nos devolvemos a el estado anterior del archivo.
 Realizaremos una web mientras usamos git.
 
-CLASIFICACIÓN
+CLASIFICACIÓN:
 Local: Que vive en nuestra laptop.
 Centralizado: Lo hace más grande, porque se guarda en el 	server. O sea, hay se almacena el proyecto permitiendo distribuirlo para múltiples dispositivos.
 Distribuidos: Git es distribuido, entonces cada usuario que 	participe en el proyecto tiene una copia del proyecto que 	realiza, por eso no dependemos de un solo computador que 	almacena la información.
-GIT
+GIT:
 Open source linux, se asoció con Beatkeeper. y cuando se rompen las relaciones, linux crea su propio sistema distribuidos de control de versiones. Haciéndolo veloz, sencillo, completamente distribuido.
 Desarrollo no lineal:  podemos abrir cosas cuando queramos a partir del proyecto principal.
 Git al igual almacena una referencia de los archivos que no se han cambiado.
@@ -23,13 +23,12 @@ LOS 3 ESTADOS DE GIT
 
 Working Directory: Inicialmente entra aquí.
 Staging Area: pasa por el área de preparación donde se inicia el proyecto.
-Git Repository: commint se guarda.
-------------Que es GitHub----------------------
+Git Repository: commit se guarda.
+¿Qué es GitHub?
 Pueden trabajar en conjunto, pero también separado.
-Git: el oftware de versiona miento.
+Git: el software de versiona miento.
 GitHub: es la plataforma host para almacenar los cambios en la red.
 Y además funciona como una red social. 
-
 Para instalar en WINDOWS, seguir los pases y listo.
 
 Linux: Si eres usuario de linux usar la consola debe ser algo con lo que te topas en tu día a día, otra ventaja es que en muchos sistemas de Código abierto ya tiene git preinstalado así que probemos eso primero.
@@ -37,7 +36,7 @@ ve a tu terminal y escribe git --version si te muestra la versión de git todo e
 En Ubuntu o distribuciones derivadas:
 sudo apt-get install git
 
-------------- COMANDOS ÚTILES EN LA TERMINASL GIT BASH -----------------
+COMANDOS ÚTILES EN LA TERMINAL GIT BASH
 Tenemos que aprender algunos comandos sencillos, para trabajar con Git.
 El primero es cd que nos permite movernos dentro de carpetas. Con cd … podemos salir de las carpetas.
 Para crear carpetas vamos a usar mkdir y ponemos el nombre de la carpeta que vamos a crear.
@@ -55,21 +54,21 @@ HASTA LLEGAR A LA DESTINO
  PARA SALIR cd ..
  ls vemos las carpetas.
  touch crear archivo.
- rm file.txt borrar rchivos
+ rm file.txt borrar archivos
  rm -rf repositorio2 borrar carpeta
  editar archivos: vim archivo.txt
 ---PARA GUARDAR LO QUE EDITE ----
 escape + :  y guardar wq con esto lo guardamos.
-sin guardar solo q  .
+sin guardar solo q 0
 
----------COMANDOS GIT -------------------------
---------git init : creando repositorio. o iniciar--------------
+COMANDOS GIT
+git init: creando repositorio. o iniciar.
 (MASTER) ES UNA RAMA: quiere decir que está en el repositorio.
 AHÍ YA PODEMOS CREAR ARCHIVOS
 CARPETA OCULTA: ES DONDE VIVE, SI NOS DESHACEMOS SE DESAPARECE EL REPO.
 Borrar repositorio: rm -rf .git
 
-----------GIT ADD ----------------------------------------------
+GIT ADD
 Agregado, quitar y viendo el estado de los archivos.
 
 Creamos un archivo nuevo y para agregarlo.
@@ -88,7 +87,7 @@ para quitarlos también
 --- git add -n archivo: no hace la agregación, o sea, miramos lo que en realidad esta 
 
 aquí estamos en Staging
----------- git commit ------------------
+GIT COMMIT 
 CONFIRMAMOS CAMBIOS
 Pasamos a nuestro repositorio git los archivos.
 got commit -m "Inicializar nuestro landing" 
@@ -100,7 +99,7 @@ git commit -m 'concateno cambios' -amend = lo que hace es concatenar con el camb
 O SOLO git commit --amend
 git log: ver los commit
 
----------------- git tag ---------------
+GIT TAG
 Etiquetando confirmaciones.
 Son ligeras o anotadas: Ligeras se crean con el nombre de la etiqueta, las anotaciones son las que llevan un mensaje usando -m podemos dejar mensaje.
 Si queremos borrarlas -d, si las queremos listar usamos -l
@@ -118,7 +117,7 @@ git tag -d 1.0
 git tag -f -a 0.1 -m 'Iniciando provecto' 218e960adc15622a75b78099ff53da5e7b68ff8a
 // luego se puede borrar la versión que no estaba bien.
 
-----------------git log ..........
+GIT LOG 
 Revisa las historias de nuestro proyecto
 logs muestra los códigos hexadecimales que crea el Sha-1, el auto y fecha del commit.
 
@@ -127,7 +126,7 @@ logs muestra los códigos hexadecimales que crea el Sha-1, el auto y fecha del c
 
 --git log -'Numero de omits?: los comits que quiero ver. La cantidad que quiera.
 
--------------------- git diff ------------------------------
+GIT DIFF 
 Revisa los cambios entre las versiones.
 Los cambios que hay entre commits se usan los Sha-1 para ver la comparación.
 git diff 218e960 PONEOS EL Sha-1 y vemos los cambios que hay, de ese commit al final en el que estamos.
@@ -138,7 +137,7 @@ git diff "Sha-1" "Sha-1"
  -- En rojo aparece al comparar con la que no nuevo con el anterior y en verde, el que anterior (que no tenía) con el nuevo (que tien).
 -- git diff [version 1] vs [version 2] 
 
---------------------- git reset --soft -----------------------
+GIT RESET --SOFT
 Con este comando, podemos borrar commits que no debimos guardar, pero mantiene los cambios.
 Pero debemos tener cuidado de no borrar otros.
 --soft [Sha-1]: nos permite identificar el commit que queremos resetear. 
@@ -147,13 +146,13 @@ Los archivos no los cambia.
 O reescribir en el commit
 --mixed: 
 --hard: 
-
-------gir reset --mixed --------
+ 
+GIR RESET --MIXED 
 Se usa para hacer cambios en commits que pudieran tener errores.
 Descarta cambios, pero no deja los archivos en stach.
 nos dice que hacer
 Cambia 
-------------git reset --hard -----------
+GIT RESET --HARD
 este si borra absolutamente todo 
 Si están en el workin directory no los borra, porque no están todavía en git.
 con commits:  git reset -hard Sha-1
@@ -162,14 +161,14 @@ el ultimo sha-1, por eso si borro algo debo tener dos ventanas, para tener los s
 git reset -hard sha1 ultimo 
 git log
 git reset HEAD^ --hard
--------------------------- otro editor de texto-----------------
-Como configuro cualquier editor de texto, para usar git.
 
+CONFIGURAR OTRO EDITOR DE TEXTO
+Como configuro cualquier editor de texto, para usar git.
 git config --global core.editor vim : se abre la configuración 
 otro editor
 git config --global core.editor "atom --wait" (o el editor de código que quiera)
 
------------ git branch (multiples variables del repositorio) -----------
+GIT BRANCH (MULTIPLES VARIABLES DEL REPOSITORIO)
 Con esto, podemos usar más ramas en el proyecto.
 (Master) es la rama principal, con ella inicia el proyecto git.
 cuando necesito puedo crear otras ramas, para trabajar con un equipo.
@@ -184,7 +183,7 @@ git branch -D nombre
 renombrar rama
 git branch -m nombre nuevoNombre
 
-------git checkout (moviéndonos entre ramas y versiones) --------
+GIT CHECKOUT (MOVIÉNDONOS ENTRE RAMAS Y VERSIONES) 
 Con este comando, nos movemos en el tiempo sin borrar nada, este comando ayuda a cazar bugs o verificar el estado de nuestro proyecto en determinado momento. moviéndonos sha a sha o bueno, comit a comit.
 Y también podemos crear ramas e ingresar a ella directamente:
 git checkout -b
@@ -194,12 +193,12 @@ git checkout 'sha-1'
 Si encontramos un bug, tenemos que crear una para solucionar el bug pero desde el master y no en la rama del bug.
 
 
---------Trabajando entre ramas------------------
+TRABAJANDO ENTRE RAMAS
  sí ocurre un error podemos ir rama a rama buscando el bug.
 si no agregamos algo en una rama, ello se mueve a otra rama esperando el commit.
 Ya puedo ir trabajando poco a poco versión a versión
 
------------- git merge (mezclando entre ramas) --------------------
+GIT MERGE (MEZCLANDO ENTRE RAMAS)
 REFLEJAR LAS RAMAS EN NUESTRA RAMA MASTER.
 git merge 'nombre rama a mezclar'
 
@@ -216,11 +215,7 @@ merge con conflictos: git merge nuva-imagen
  y ya decido con que quedarme.
 
 
-
-
-
-
--------------- git rebase-. -----------------
+GIT REBASE
 Rescribe la historia del proyecto es otra manera de hacer mezclas de las ramas en el proyecto.
 Con este solo hacemos un commit y no agregamos más con este solo tenemos una línea de tiempo con el log.
 
@@ -253,9 +248,8 @@ git rebase -i updateA
 y en nuestro editor veremos las opciones.
 
 
--------git stash-------------------
+GIT STASH
 GUARDANDO CAMBIOS TEMPORALMENTE
-
 Si no estamos listos para confirmar el cambio, Stash nos permite mantener un estado intermedio antes de generar un commit. CAMBIOS SIN CONFIRMAR.
 
 Entonces guardo sin hacer commit, guardamos el estado.
@@ -301,7 +295,7 @@ git stash apply
 
 git stash apply stash@{0}  
 
---------------Cherry pick eligiendo commits selectivamente---------------
+CHERRY PICK ELIGIENDO COMMITS SELECTIVAMENTE
 Si estás trabajando en una rama, pero de repente notas que hiciste un cambio en la rama que no debías, para esto podemos usar cherry pick. Este comando nos puede salvar la vida, ya que nos permite sacar cambios específicos de una rama y mezclarlos en otra.
 
 Si hacemos algo en una rama que no era:
@@ -317,19 +311,17 @@ Ahora so podemos mezclar con nuestra rama master.
  git merge hotfix2   
 
 
--------------------- Desafío git ------------------
+Desafío git
 Crear un repositorio y crear un flujo git log --oneline --graph
 múltiples commit por cada rama.
 hotfix, css, imagenes RD y master.
 
-
-
-----------------------Creando cuenta GitHub-----------
+CREANDO CUENTA GITHUB
 Vamos a la web de GitHub que nos brinda el repositorio remoto.
 Creamos la cuenta y nos loguemos.
 ¿Qué es? Una red social para desarrolladores, que nos permite trabajar y colaborar con la comunidad.
 
------------git clone/fork (Clonando repositorios remotos) ------------
+GIT CLONE/FORK (CLONANDO REPOSITORIOS REMOTOS)
 el **fork **en github nos hace una copia del proyecto en nuestro perfil/repositorios para poder hacerle lo que queramos sin afectar el proyecto original.
 
 Vamos a crear nuestro primer proyecto en GitHub.
@@ -352,7 +344,7 @@ PUEDO DESCARGARLO ZIP PARA USAR ALGO O CLONAR PARA TENERLO EN LOCAL.
 ** SI NO SOY DUEÑO LE HAGO UN Fork, nos permite clonar el proyecto y me agrega un proyecto en mi propio GitHub para poder trabajar en él.	
    EN EL YO PUEDO HACER CAMBIOS Y SOLICITAR AL DUEÑO QUE LOS ACEPTE.
 
-******************Añadiendo clave ssh s GitHub*****************************
+AÑADIENDO CLAVE SSH S GITHUB
 Si quieres mantener tus seguros dentro de GitHub es importante usar llaves ssh con el comando:
 ssh-keygen -t rsa -b 4096 -C "correo"
 
@@ -365,7 +357,7 @@ TIENE QUE SE EL CORREO QUE TIENE EN GitHub
 ** PARA COPIAR LA LLAVE USAMOS:
    cat ~/.ssh/id_rsa.pub
 
----------------git remote (Añadiendo un repositorio remoto a uno local) --------------
+GIT REMOTE (AÑADIENDO UN REPOSITORIO REMOTO A UNO LOCAL) 
 Tenemos que crear una conexión entre tu repositorio local y tu repositorio remoto para que puedas compartirlo con la comunidad. Para esto vamos a usar un nuevo comando que en este caso es git remote. Por convención lo nombramos “origin”. Para borrarlo podemos usar git remote remove y el nombre del repositorio.
 
 *** git remote add origin link ssh o hhtps
@@ -377,7 +369,7 @@ Tenemos que crear una conexión entre tu repositorio local y tu repositorio remo
 ** eliminarlo git remote remove origin
 
 
----------------git pull/fetch (Trayendo cambios desde el repositorio remoto) -------
+GIT PULL/FETCH (TRAYENDO CAMBIOS DESDE EL REPOSITORIO REMOTO) 
 Vamos a compartir nuestro código con el repositorio remoto. Antes de poder enviar cambios debo tener los mismos cambios en el repositorio remoto que en el repositorio local.
 Para traer los cambios del repositorio remoto vamos a usar el comando git fetch. Este comando recibe dos parámetros 1. desde donde y hacia dónde van.
 Luego de traer los cambios, debemos mezclarlos con la rama que estamos usando en local. Para esto usamos git merge.
@@ -392,8 +384,7 @@ Luego de traer los cambios, debemos mezclarlos con la rama que estamos usando en
 pull: git pull origin master
 --Con esto ya tenemos en local las cosas para trabajar con el remoto.
 
-
---------------git push (Enviando cambios al repositorio remoto) ------------------------
+GIT PUSH (ENVIANDO CAMBIOS AL REPOSITORIO REMOTO) 
 Para enviar nuestro código al repositorio remoto vamos a usar el comando git push. Así logramos que otras personas tengan acceso a nuestro proyecto.
 Cuando esto termine tendremos acceso a nuestro trabajo desde la plataforma de GitHub.
 Lo primero que debemos hacer es enviar nuestros tags en el proyecto.
@@ -403,9 +394,7 @@ también recordemos que podemos evitar ramas, lo que también podemos hacer a tr
 
 *** Para enviar las demás ramas y tags: git push origin master --tags   -- Otra rama: git push origin RD
 
---------Explorando la plataforma de GitHub------------------------------------
-Watch
-
+EXPLORANDO LA PLATAFORMA DE GITHUB
     Podemos calificar los proyectos que hemos creado.
     Podemos ver las estadísticas de nuestro proyecto.
     También las personas que le han hecho fork.
@@ -434,7 +423,7 @@ Unwatch (Nos permite que nos lleguen notificaciones si hay cambios en el reposit
 
     ‘‘LeonidasEsteban’’ Para proyectos complejos se puede hacer un “dependencia” de repositorios o sub-repositorios. Es como un proyecto dentro de otro, pero es muy raro usarlos y de preferencia yo solo recomiendo un solo repositorio’.
 
-    Settings:
+    Settings: Configuraciones del GitHub.
 
     collaborators (aquí se añade a más gente para que colabore en este proyecto)
 
@@ -457,36 +446,41 @@ Unwatch (Nos permite que nos lleguen notificaciones si hay cambios en el reposit
 
     Al crear un “issue” o un “pull request”, github te permite incluir etiquetas en los mismos. Entre las etiquetas que nos pueden interesar a los que estamos comenzando a usar la plataforma se encuentran “help wanted” y “good first issue”. Github anima a los desarrolladores a que marquen los “issue” y los “pull request” que son más aptos para los que inician en este mundo con estas etiquetas y adicionalmente se pide a la comunidad que den un apoyo especial para estos issue/pull request. ¿Quiéres comenzar a colaborar en un proyecto real en Github pero aún te sientes inseguro con tus conocimientos? Haz una búsqueda de estás etiquetas y encontrarás miles de oportunidades para hacer tu primer aporte.
 
-*******************Poryectos github***************************
+PROYECTOS GITHUB
 A cada repositorio se le ´puede crear un proyecto.
-Ejemplo para el Resposive Design seria uno y así para cada parrte grande de un proyecto.
+Ejemplo para el Resposive Design seria uno y así para cada parte grande de un proyecto.
 
 Y se puede orgranizar por columnas las tareas.
 
-*************Creando un template para issues *******************
+CREANDO UN TEMPLATE PARA ISSUES
 Lo ideal es que siempre que creemos un proyecto tengamos un template para enviar pull requests o cuando tengamos issues.
 
 En este, pedimos la información mediante preguntas de lo que queremos saber de un issue o un pull.
 
-*************Creando un template para Pull Request***************
+
+
+
+Creando un template para Pull Request
 Nos permite tener pautas con los colaboradores.
 Con estas pautas pueden solicitar un Pull Request.
 
-******.gitignore (Ignorando archivos no deseados)***************
-
-Si tienes archivos que no pueden ser públicos, como archivos de configuración con contraseñas, lo ideal es que no los subas a tu repositorio, estos archivos los puedes poner en el archivo .gitignore.
+GITIGNORE (IGNORANDO ARCHIVOS NO DESEADOS)
+Si tienes archivos que no pueden ser públicos, como archivos de configuración con contraseñas, lo ideal es que no los subas a tu repositorio, estos archivos los puedes poner en el archivo. gitignore.
 
 En el agregamos todos los archivos que requerimos en local pero no en el remoto.
 
 En esta web podemos encontrar el gitignore de nuestro proyecto-
 https://www.toptal.com/developers/gitignore
 
-**********Pull Request (Colabora a proyectos externos)***********
+Pull Request (Colabora a proyectos externos)
 Un Pull Request es una solicitud para que el dueño del repositorio realice los cambios que estas proponiendo. Estos nunca se hacen a la rama master, para evitar inconvenientes.
 Es la base de la colaboración Open Source en github 
-Se tiene en cuenta que si bloqueamos la rama master, todo cambio se debe subir desde una rama diferente y luego pedir el pull Request.
+Se tiene en cuenta que, si bloqueamos la rama master, todo cambio se debe subir desde una rama diferente y luego pedir el pull Request.
 
-****************Issues y Milestones(Reportando y monitoreando errores edicientemente)*********************
+
+
+
+ISSUES Y MILESTONES(REPORTANDO Y MONITOREANDO ERRORES EFICIENTEMENTE)
 
 Issues: Es la manera de hacer reportes o cambios en el repositorio.
 
@@ -494,19 +488,19 @@ Milestone: Una forma de agrupas conjuntos de Issues o PullRequest.
 
 Labels: Son etiquetas para nuestros Issues.
 
-********¿Cómo funciona un Pull Request en GitHub?**************
+¿Cómo funciona un Pull Request en GitHub?
 Debemos crear un fork, que lo que hace es crear una copia del original y tener nuestra propia versión.
 
-Si yo quiero puedo solicitar el PullRequest a el lider del proyecto al que se le hizo el fork, y si es aprovado eres parte o eres uno de los desarroladores que aporta a ese proyecto.
+Si yo quiero puedo solicitar el PullRequest a el líder del proyecto al que se le hizo el fork, y si es aprobado eres parte o eres uno de los desarrolladores que aporta a ese proyecto.
 
-***********GitHub Pages, hosting gratuito de archivos estáticos****************************
-GitHub nos permite publicar nuestros proyectos a tráves de GitHub Pages.
+GITHUB PAGES, HOSTING GRATUITO DE ARCHIVOS ESTÁTICOS
+GitHub nos permite publicar nuestros proyectos a través de GitHub Pages.
 
-Los GitHubs pages almacenan código estático, así mismo podemos agregarle nuestro dominio personalizado agregandolo a un archivo CNAME.
+Los GitHubs pages almacenan código estático, así mismo podemos agregarle nuestro dominio personalizado agregándolo a un archivo CNAME.
 
-En el probedor de dominio agregamos las ip de GitHub.
+En el proveedor de dominio agregamos las ip de GitHub.
 
-*******GitHub Desktop, todo lo que necesitas de Git en una sola herramienta gráfica********
+GITHUB DESKTOP, todo lo que necesitas de Git en una sola herramienta gráfica
 Interfaz de escritorio en desktop.github.com para que puedas trabajar gráficamente desde tu PC. Desarrollada en Electron. Lo primero que debes hacer es iniciar sesión, luego clonar el proyecto.
 
     Puedes ver todo el historial de tu proyecto de una manera muy amigable.
