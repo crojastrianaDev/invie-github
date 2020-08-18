@@ -498,3 +498,19 @@ Labels: Son etiquetas para nuestros Issues.
 Debemos crear un fork, que lo que hace es crear una copia del original y tener nuestra propia versión.
 
 Si yo quiero puedo solicitar el PullRequest a el lider del proyecto al que se le hizo el fork, y si es aprovado eres parte o eres uno de los desarroladores que aporta a ese proyecto.
+
+***********GitHub Pages, hosting gratuito de archivos estáticos****************************
+GitHub nos permite publicar nuestros proyectos a tráves de GitHub Pages.
+
+Los GitHubs pages almacenan código estático, así mismo podemos agregarle nuestro dominio personalizado agregandolo a un archivo CNAME.
+
+En el probedor de dominio agregamos las ip de GitHub.
+
+*******GitHub Desktop, todo lo que necesitas de Git en una sola herramienta gráfica********
+Interfaz de escritorio en desktop.github.com para que puedas trabajar gráficamente desde tu PC. Desarrollada en Electron. Lo primero que debes hacer es iniciar sesión, luego clonar el proyecto.
+
+    Puedes ver todo el historial de tu proyecto de una manera muy amigable.
+    Quien hace los cambios, quien los aprueba.
+    -También puedes navegar en todos tus repositorios.
+    Puedes hacer cambios.
+

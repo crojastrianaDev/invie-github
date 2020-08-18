@@ -1,5 +1,4 @@
-# invie-github
-Tus mejores guitarras
+# invie
+Las guitarras más locas
 
-Este repositorio cuenta con un archivo txt, con un resumen de lo aprendido en el curso de Git y GitHub de platzi y appco.
-
+http://leonidasesteban.github.io/invie-responsive/
