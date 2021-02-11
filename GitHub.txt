@@ -508,3 +508,13 @@ Interfaz de escritorio en desktop.github.com para que puedas trabajar gráficame
     -También puedes navegar en todos tus repositorios.
     Puedes hacer cambios.
 
+
+Cambiar main
+git branch -M main
+git add origin url
+git push origin main
+
+
+si pide bajar cambios
+ git fetch origin master
+git merge origin/master --allow-unrelated-histories
